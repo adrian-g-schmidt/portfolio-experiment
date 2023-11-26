@@ -3,8 +3,8 @@
   height:100%;
   --gradient-color-1: #007E92; 
   --gradient-color-2: #70DEA2; 
-  --gradient-color-3: #000B17;  
-  --gradient-color-4: #000B17;
+  --gradient-color-3: #196051;  
+  --gradient-color-4: #ff9900;
 }
 
 .big{
@@ -23,6 +23,7 @@
   height: 200px;
   position: relative;
   overflow: hidden;
+  cursor: pointer; 
 }
 
 #gradient-canvas, #text {
@@ -36,7 +37,7 @@
 
 #text {
   z-index: 10;
-  mix-blend-mode: difference;
+  mix-blend-mode: color-burn;
 }
 
 
