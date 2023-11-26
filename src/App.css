@@ -1,38 +1,42 @@
-.App {
+#gradient-canvas {
+  width:100%;
+  height:100%;
+  --gradient-color-1: #007E92; 
+  --gradient-color-2: #70DEA2; 
+  --gradient-color-3: #000B17;  
+  --gradient-color-4: #000B17;
+}
+
+.big{
+  font-size: 500%;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.centered{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#cool-canvas {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#gradient-canvas, #text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+#text {
+  z-index: 10;
+  mix-blend-mode: difference;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
